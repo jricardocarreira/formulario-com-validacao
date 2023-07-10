@@ -1,0 +1,97 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    height: 100vh;
+    background-image: url(../images/bg-repeat.jpg);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensagem {
+    width: 300px;
+    color: #fff;
+    margin-right: 60px;
+}
+
+.mensagem .titulo {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 11px;
+}
+
+.mensagem .texto {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.formulario {
+    background-color: #fff;
+    width: 340px;
+}
+
+.formulario .info {
+    font-size: 15px;
+    text-indent: 10px;
+    width: 298px;
+    min-height: 35px;
+    max-height: 100px;
+    margin: 15px 21px 0 21px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.formulario textarea{
+    resize: none;
+    padding-top: 9px;
+}
+
+.formulario .info::placeholder {
+    font-weight: 700;
+    color: #A8A8A8;
+    text-indent: 10px;
+}
+
+.formulario .campo-obrigatorio {
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.formulario .enviar {
+    font-size: 15px;
+    color: #fff;
+    background-color: #3CCC87;
+    width: 298px;
+    height: 41px;
+    border: none;
+    border-radius: 5px;
+    margin: 21px;
+}
+
+/* Para validação dos itens dos formulários NÃO respondidos */
+
+.formulario .sem-resposta {
+    border-color: #f52e2e;
+}
+
+.formulario .mensagem-validacao {
+    font-size: 8px;
+    font-weight: 400;
+    margin-left: 21px;
+    color: #f52e2e;
+    display: none;
+}
+
+.formulario .sem-resposta.info + .mensagem-validacao {
+    display: block;
+}
+
+/* Para validação dos itens respondidos */
+
+.formulario .respondido {
+    border-color: #3CCC87;
+}
